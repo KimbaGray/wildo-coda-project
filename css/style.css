@@ -87,8 +87,8 @@
 
 /* set mobile carousel container height to 300px for all images inside */
 .carousel-inner {
-    max-height: 300;
-    height:300;
+    max-height: 200;
+    height:200;
 }
 
 /* set styles for devices > 768 */

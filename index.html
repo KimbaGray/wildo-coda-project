@@ -91,17 +91,20 @@
   </nav>
   </header> -->
 
-  <section class="slidingImageGallery">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <section class="slidingImageGallery container"> <!--puts carousel inside a container instead of having carousel take up the whole page-->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"> <!--attribute is used to mark a carousel as animating starting at page load-->
           <div class="carousel-inner">
             <div class="carousel-item active"> <!--'active' needs to be added to one of the slides otherwise carousel will not be visible-->
               <img class="d-block w-100" src="London.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="London bus.jpeg" alt="Second slide">
+              <img class="d-block w-100" src="London2.jpeg" alt="Second slide">
             </div>
             <div class="carousel-item">
               <img class="d-block w-100" src="London.jpg" alt="Third slide">
+            </div>
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="London2.jpeg" alt="Fourth slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
