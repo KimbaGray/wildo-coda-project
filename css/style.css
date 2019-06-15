@@ -15,9 +15,19 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #dddfd4;
     color: #ffffff;
-    
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #3fb0ac;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #3fb0ac;
+    text-decoration: none;
 }
 
 .siteNavigation{
@@ -52,35 +62,37 @@
 }
 
 .btn-outline{
-    color: #000000;
+    color: #dddfd4;
     border: 2px solid black;
     font-family: 'Reem Kufi', sans-serif;
 }
 
 .btn-outline:hover{
-    color: #ffffff;
+    color: #dddfd4;
 }
 
 .btn{
-    background-color: #57BA98;
-    border: 2px solid #57BA98;
-}
-
-.form-control{
-    display: flex;
-    justify-content: flex-end;
-    color: #303C6C;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-.slidingImageGallery {
-    font-family: 'Reem Kufi', sans-serif;
+    background-color: #dddfd4;
+    border: 2px solid #dddfd4;
 }
 
 .shortInfo {
     font-family: 'Reem Kufi', sans-serif;
 }
 
-.footer {
+.page-footer {
     font-family: 'Reem Kufi', sans-serif;
 }
+
+.sm-ic {
+    color: #000000;
+    text-align: center;
+}
+
+.sm-ic:hover {
+    color: #3fb0ac;
+    text-align: center;
+}
+
+
+
