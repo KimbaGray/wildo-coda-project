@@ -84,3 +84,24 @@
 .footer {
     font-family: 'Reem Kufi', sans-serif;
 }
+
+/* set mobile carousel container height to 300px for all images inside */
+.carousel-inner {
+    max-height: 300;
+    height:300;
+}
+
+/* set styles for devices > 768 */
+@media screen and (min-width:768px) {
+    /*carousel container height to 300px for all images inside */
+    .carousel-inner {
+        max-height: 400px;
+    }
+}
+/* set desktop styles for devices > 992 */
+@media screen and (min-width:992px) {
+    /*carousel container height to 80% of browser height for all images inside */
+    .carousel-inner {
+        min-height: 80vh;
+    }
+}
