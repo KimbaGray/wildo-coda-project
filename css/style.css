@@ -1,0 +1,86 @@
+.title {
+    font-family: 'Reem Kufi', sans-serif;
+    
+}
+
+.siteNav {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.siteNavMenu ul h1{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #ffffff;
+    
+}
+
+.siteNavigation{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.navbar-brand{
+    color: #000000;
+    font-family: 'Reem Kufi', sans-serif;
+    
+}
+
+.navbar-brand:hover{
+    color: #57BA98;
+    text-decoration: underline; 
+}
+
+.navbar-item:hover { 
+    text-decoration: underline; 
+}
+
+
+.nav-link{
+    color: #000000;
+    font-family: 'Reem Kufi', sans-serif;
+    
+}
+
+.nav-link:hover{
+    color: #57BA98;
+    text-decoration: underline; 
+}
+
+.btn-outline{
+    color: #000000;
+    border: 2px solid black;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.btn-outline:hover{
+    color: #ffffff;
+}
+
+.btn{
+    background-color: #57BA98;
+    border: 2px solid #57BA98;
+}
+
+.form-control{
+    display: flex;
+    justify-content: flex-end;
+    color: #303C6C;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.slidingImageGallery {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.shortInfo {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.footer {
+    font-family: 'Reem Kufi', sans-serif;
+}
