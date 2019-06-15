@@ -15,9 +15,19 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #dddfd4;
     color: #ffffff;
     font-family: 'Reem Kufi', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #3fb0ac;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #3fb0ac;
+    text-decoration: none;
 }
 
 .siteNavigation{
@@ -75,10 +85,14 @@
 }
 
 .sm-ic {
+    color: #000000;
     text-align: center;
 }
 
-.fa {
+.sm-ic:hover {
+    color: #3fb0ac;
     text-align: center;
 }
+
+
 
