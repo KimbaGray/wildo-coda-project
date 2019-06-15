@@ -17,7 +17,7 @@
 .navbar {
     background-color: #ffffff;
     color: #ffffff;
-    
+    font-family: 'Reem Kufi', sans-serif;
 }
 
 .siteNavigation{
@@ -52,35 +52,33 @@
 }
 
 .btn-outline{
-    color: #000000;
+    color: #dddfd4;
     border: 2px solid black;
     font-family: 'Reem Kufi', sans-serif;
 }
 
 .btn-outline:hover{
-    color: #ffffff;
+    color: #dddfd4;
 }
 
 .btn{
-    background-color: #57BA98;
-    border: 2px solid #57BA98;
-}
-
-.form-control{
-    display: flex;
-    justify-content: flex-end;
-    color: #303C6C;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-.slidingImageGallery {
-    font-family: 'Reem Kufi', sans-serif;
+    background-color: #dddfd4;
+    border: 2px solid #dddfd4;
 }
 
 .shortInfo {
     font-family: 'Reem Kufi', sans-serif;
 }
 
-.footer {
+.page-footer {
     font-family: 'Reem Kufi', sans-serif;
 }
+
+.sm-ic {
+    text-align: center;
+}
+
+.fa {
+    text-align: center;
+}
+
