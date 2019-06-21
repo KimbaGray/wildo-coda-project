@@ -3,6 +3,22 @@
     
 }
 
+.carousel-caption {
+    font-family: 'Reem Kufi', sans-serif;
+    color: white; 
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .siteNav {
     font-family: 'Reem Kufi', sans-serif;
 }
