@@ -77,6 +77,10 @@
     text-decoration: underline; 
 }
 
+.weather {
+    max-width:448px;
+}
+
 .btn-outline{
     color: #dddfd4;
     border: 2px solid black;
@@ -129,4 +133,14 @@
 .sm-ic:hover {
     color: #3fb0ac;
     text-align: center;
+}
+
+
+.currentWeather h1 {
+    font-size:0.5em!important;
+}
+
+.currentWeather .w-icon {
+    width: 3rem!important;
+    height: 3rem!important;
 }
