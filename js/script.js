@@ -10,7 +10,6 @@ var text = "";
 	}
 	selectedText = typeString[count];
 	text = selectedText.slice(0, ++i);
-
 	document.getElementById("typing").innerHTML = text;
 	if (text.length === selectedText.length) {
 		count++;
@@ -18,3 +17,13 @@ var text = "";
 	}
 	setTimeout(type, 175);
 })();
+
+
+var input = document.getElementById("mySearch");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("searchButton").click();
+  }
+});
