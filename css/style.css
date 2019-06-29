@@ -3,6 +3,22 @@
     
 }
 
+.carousel-caption {
+    font-family: 'Reem Kufi', sans-serif;
+    color: white; 
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .siteNav {
     font-family: 'Reem Kufi', sans-serif;
 }
@@ -15,7 +31,7 @@
 }
 
 .navbar {
-    background-color: #dddfd4;
+    background-color: #ffffff;
     color: #ffffff;
     font-family: 'Reem Kufi', sans-serif;
 }
@@ -87,10 +103,6 @@
 .sm-ic {
     color: #000000;
     text-align: center;
-}
-
-.footer {
-    font-family: 'Reem Kufi', sans-serif;
 }
 
 /* set mobile carousel container height to 300px for all images inside */
