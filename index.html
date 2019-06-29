@@ -19,6 +19,7 @@
 
 
 <body>
+  <!-- Navbar starts -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="./index.html">Wildo Coda</a>
@@ -53,30 +54,35 @@
       </div>
     </nav>
   </div>
+  <!-- Navbar ends -->
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body">
           <form class="form-inline">
-            <input class="form-control form-control-ml ml-5 w-75" type="text" placeholder="Search Wildo Coda"
+            <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
               aria-label="Search">
             <div class="searchButton">
-              <button type="button" class="btn ml-5">Search</button>
+              <button type="button" class="btn ml-5" id="searchButton"
+                onclick="javascript:alert('Sorry your search was unsuccessful. I am working on this so watch this space 🧐')">Search</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
+  <!-- Modal ends -->
 
+  <!-- Weather API -->
   <section class="weather">
   </section>
+  <!-- Weather API ends -->
 
   <br>
-
+  <!-- Sliding image gallery starts -->
   <section class="slidingImageGallery container">
     <!--puts carousel inside a container instead of having carousel take up the whole page-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -127,9 +133,11 @@
       </a>
     </div>
   </section>
+  <!-- Sliding image gallery ends -->
 
   <br>
 
+  <!-- Footers starts -->
   <footer class="page-footer">
     <div class="container">
       <div class="d-flex justify-content-center col-md-12 py-3">
@@ -148,6 +156,7 @@
       </div>
     </div>
   </footer>
+  <!-- Footer ends -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

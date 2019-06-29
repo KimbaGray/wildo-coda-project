@@ -8,15 +8,11 @@ body {
 }
 
 .modal-dialog {
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
     padding: 0px;
   }
   
-  .modal-content {
-    height: 100%;
-  }
-
 .carousel-caption {
     color: white; 
     font-size: 20px;
