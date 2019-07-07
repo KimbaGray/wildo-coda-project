@@ -76,14 +76,143 @@
   </div>
   <!-- Modal ends -->
 
-  <!-- Weather API -->
-  <section class="weather">
+  <!-- Weather API starts -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON"
+          data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
+          data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
+          data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
+        <script>
+          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
+      </div>
+    </div>
   </section>
   <!-- Weather API ends -->
 
   <br>
+  <!-- Filterable portfolio starts -->
+  <div class="container d-flex justify-content-center">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Parks</button>
+      <button class="btn" onclick="filterSelection('cars')"> Bars</button>
+      <button class="btn" onclick="filterSelection('people')"> Restaurants</button>
+      <button class="btn" onclick="filterSelection('people')"> Hidden gems</button>
+    </div>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="container">
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/Hampstead4.png" alt="Hampstead4" style="width:100%">
+          <p>
+            <h4>Golders Hill Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/Hampstead1.jpeg" alt="Hampstead1" style="width:100%">
+          <p>
+            <h4>Hampstead Heath</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/Hampstead4.png" alt="Hampstead4" style="width:100%">
+          <p>
+            <h4>Highbury Fields</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/Primrose.jpeg" alt="Hampstead2" style="width:100%">
+          <p>
+            <h4>Primrose Hill</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/RegentsPark.jpeg" alt="Hampstead3" style="width:100%">
+          <p>
+            <h4>Regent's Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./images/Hampstead4.png" alt="Hampstead4" style="width:100%">
+          <p>
+            <h4>Waterlow Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
 
 
+      <div class="column cars">
+        <div class="content">
+          <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+          <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+  </div>
+  </div>
+  <!-- Filterable portfolio ends -->
   <br>
 
   <!-- Footers starts -->
