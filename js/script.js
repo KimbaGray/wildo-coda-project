@@ -1,3 +1,5 @@
+// Homepage typed text
+
 var typeString = ["I'm Wildo, a travel blogger and photographer. Take a look around my blog to discover a treasure trove of hidden London gems."];
 var i = 0;
 var count = 0;
@@ -18,7 +20,7 @@ var text = "";
 	setTimeout(type, 175);
 })();
 
-
+// Search button when press enter
 var input = document.getElementById("mySearch");
 
 input.addEventListener("keyup", function(event) {
@@ -29,7 +31,6 @@ input.addEventListener("keyup", function(event) {
 });
 
 // Filterable portfolio
-
 filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
@@ -37,13 +38,13 @@ function filterSelection(c) {
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
   }
 }
 
 // Show filtered elements
-function w3AddClass(element, name) {
+function AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -55,7 +56,7 @@ function w3AddClass(element, name) {
 }
 
 // Hide elements that are not selected
-function w3RemoveClass(element, name) {
+function RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
