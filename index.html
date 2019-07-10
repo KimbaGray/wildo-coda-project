@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">North</a>
+            <a class="nav-link" href="./north.html">North</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">South</a>
@@ -66,8 +66,7 @@
             <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
               aria-label="Search">
             <div class="searchButton">
-              <button type="button" class="btn ml-5" id="searchButton"
-                onclick="javascript:alert('Sorry your search was unsuccessful. I am working on this so watch this space 🧐')">Search</button>
+              <button type="button" class="btn ml-5" id="searchButton">Search</button>
             </div>
           </form>
         </div>
@@ -75,6 +74,8 @@
     </div>
   </div>
   <!-- Modal ends -->
+
+  <!-- Weather API starts -->
   <section class="container">
     <div class="row">
         <div class="col-md-8">
@@ -85,11 +86,12 @@
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
         </div>
-        
     </div>
-     
 </section>
+<!-- Weather API ends -->
+
   <br>
+
   <!-- Sliding image gallery starts -->
   <section class="slidingImageGallery container">
     <!--puts carousel inside a container instead of having carousel take up the whole page-->

@@ -3,40 +3,7 @@ body {
     
 }
 
-.searchButton {
-    padding-top: 5px;
-}
-
-.modal-dialog {
-    width: 50%;
-    height: 50%;
-    padding: 0px;
-  }
-  
-.carousel-caption {
-    color: white; 
-    font-size: 20px;
-    line-height: 1.5;
-    padding-top: 0.8rem;
-    padding-bottom: 0.1rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-}
-
-.siteNavMenu ul h1{
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    align-items: space-between;
-}
-
-.navbar {
-    background-color: #ffffff;
-    color: #ffffff;
-}
-
+/* Navigation  */
 .navbar-light .navbar-nav .nav-link:hover {
     color: #3fb0ac;
     text-decoration: none;
@@ -47,59 +14,42 @@ body {
     text-decoration: none;
 }
 
-.navbar-brand{
-    color: #000000;
+/* Search and modal */
+.searchButton {
+    padding-top: 5px;
 }
 
-.navbar-brand:hover{
-    color: #57BA98;
-    text-decoration: underline; 
+.modal-dialog {
+    width: 50%;
+    height: 50%;
+    padding: 0px;
+  }
+
+/* Weather */
+.currentWeather h1 {
+    font-size:0.5em!important;
 }
 
-.navbar-item:hover { 
-    text-decoration: underline; 
-}
-
-.nav-link { 
-    color: #000000;
-}
-
-.nav-link:hover {
-    color: #57BA98;
-    text-decoration: underline; 
+.currentWeather .w-icon {
+    width: 3rem!important;
+    height: 3rem!important;
 }
 
 .weather {
     max-width:448px;
 }
 
-.btn-outline{
-    color: #dddfd4;
-    border: 2px solid black;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-.btn-outline:hover{
-    color: #dddfd4;
-}
-
-.btn {
-    background-color: #ffffff;
-    border: none;
-}
-
-.btn:hover {
-    background-color: #ffffff;
-    border: none;
-}
-
-.fa-search {
-    color: #000000;
-}
-
-.sm-ic {
-    color: #000000;
-    text-align: center;
+/* Image carousel */
+.carousel-caption {
+    color: white; 
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
 
 /* set mobile carousel container height to 300px for all images inside */
@@ -123,15 +73,83 @@ body {
     }
 }
 
+/* social media icons in footer*/
+.sm-ic {
+    color: #000000;
+    text-align: center;
+}
+
 .sm-ic:hover {
     color: #3fb0ac;
     text-align: center;
 }
 
+/* filterable portfolio */
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /*Hide columns by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background colour on hover*/
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background colour to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
 
-.currentWeather h1 {
-    font-size:0.5em!important;
-}
+  h4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .northImg {
+      border-radius: 8px;
+  }
 
 .currentWeather .w-icon {
     width: 3rem!important;
