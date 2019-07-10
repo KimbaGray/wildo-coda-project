@@ -137,3 +137,44 @@ body {
     width: 3rem!important;
     height: 3rem!important;
 }
+
+.column {
+    float: right;
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .contact { 
+    float: left;
+    width: 50%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    padding: 50px;
+}
+
+.form-container{
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+  .contact-button {
+    display: block;
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 10px; */
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: #da1560;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+.vert-align-center {
+    align-self: center;
+}
