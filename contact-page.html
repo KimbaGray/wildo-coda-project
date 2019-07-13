@@ -19,55 +19,58 @@
 
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="./index.html">Wildo Coda</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">North</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">South</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">East</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">West</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Get in touch</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-btn">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
-            </button>
+    <!-- Navbar starts -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html">Wildo Coda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./north.html">North</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./east.html">East</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./south.html">South</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./west.html">West</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./contact-page.html">Get in touch</a>
+            </li>
+          </ul>
+          <div class="searchBar">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
+              </button>
+            </div>
           </div>
-        </form>
+        </nav>
       </div>
-    </nav>
-  </div>
+      <!-- Navbar ends -->
 
+
+  <!-- Weather API starts -->
   <section class="container">
-    <div class="row">
-      <div class="col-md-8">
-
+      <div class="row">
+          <div class="col-md-8">
+          </div>
+          <div class="col-md-12">
+              <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear" data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)" data-cloudcolor="rgba(101, 101, 101, 0.37)" >LONDON WEATHER</a>
+              <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+              </script>
+          </div>
       </div>
-      <div class="col-md-4">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON"
-          data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
-          data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
-          data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
-        
-      </div>
+  </section>
+  <!-- Weather API ends -->
 
     </div>
   </section>
@@ -86,7 +89,7 @@
               <div class="form-group">
                 <h2> Contact Us </h2>
                 <br>
-                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Your Name" required>
               </div>
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
