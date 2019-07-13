@@ -4,10 +4,11 @@
 // input.addEventListener("keyup", function(event) {
 //   if (event.keyCode === 13) {
 //    event.preventDefault();
-//    document.getElementById("searchButton").click();
+//    document.getElementById("text").innerHTML = message;;
 //   }
 // });
-var message = "We're working on this.";
+
+var message = "We're working on this feature. Watch this space 🕵️‍♀️";
 
 var searchBtn = document.getElementById("searchButton");
 searchBtn.addEventListener("click", function() {
