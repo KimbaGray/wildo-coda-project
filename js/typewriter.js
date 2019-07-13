@@ -15,5 +15,5 @@ var text = "";
 		count++;
 		i = 0;
 	}
-	setTimeout(type, 175);
+	setTimeout(type, 200);
 })();

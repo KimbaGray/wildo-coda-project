@@ -29,19 +29,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./north.html">North</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">South</a>
+          <li class="nav-item active-nav">
+            <a class="nav-link" href="./south.html">South</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">East</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./east.html">East</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">West</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./west.html">West</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="./contact-page.html">Get in touch</a>
           </li>
         </ul>
@@ -94,9 +94,6 @@
           data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
           data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
           data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
-        <script>
-          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-        </script>
       </div>
     </div>
   </section>
@@ -107,9 +104,8 @@
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
       <button class="btn" onclick="filterSelection('parks')"> Parks</button>
-      <button class="btn" onclick="filterSelection('pubs')"> Pubs</button>
-      <button class="btn" onclick="filterSelection('restaurants')"> Restaurants</button>
-      <button class="btn" onclick="filterSelection('hiddenGems')"> Hidden gems</button>
+      <button class="btn" onclick="filterSelection('foodanddrink')"> Food and Drink</button>
+      <button class="btn" onclick="filterSelection('art')"> Art</button>
     </div>
   </div>
 
@@ -175,8 +171,8 @@
       </div>
       <!-- PARKS END -->
 
-      <!-- PUBS BEGINS -->
-      <div class="column pubs">
+      <!-- Food and Drink< BEGINS -->
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Old Bull.jpeg" alt="Pub" style="width:100%" class="northImg">
           <p>
@@ -185,7 +181,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column pubs">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Flask.jpeg" alt="Pub" style="width:100%" class="northImg">
           <p>
@@ -194,7 +190,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column pubs">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Faltering.jpeg" alt="Pub" style="width:100%" class="northImg">
           <p>
@@ -203,10 +199,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <!-- PUBS END -->
-
-      <!-- REATAURANTS BEGINS -->
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Sardine.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -215,7 +208,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/BQ.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -224,7 +217,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Ceremony.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -233,7 +226,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Rubedo.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -242,7 +235,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Mercury.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -251,7 +244,7 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column restaurants">
+      <div class="column foodanddrink">
         <div class="content">
           <img src="./images/Trullo.jpg" alt="Restaurant" style="width:100%" class="northImg">
           <p>
@@ -260,31 +253,37 @@
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <!-- RESTAURANTS END -->
+      <!-- Food and Drink< END -->
 
-      <!-- HIDDEN GEMS BEGINS -->
-      <div class="column hiddenGems">
+      <!-- Art BEGINS -->
+      <div class="column art">
         <div class="content">
-          <img src="/w3images/people1.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Antiques</h4>
+          <img src="./images/Barbican.jpeg" alt="Gallery" style="width:100%" class="northImg">
+          <p>
+            <h4>Barbican Centre</h4>
+          </p>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column hiddenGems">
+      <div class="column art">
         <div class="content">
-          <img src="/w3images/people2.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Other</h4>
+          <img src="./images/Chisenhale.jpg" alt="Gallery" style="width:100%" class="northImg">
+          <p>
+            <h4>Chisenhale Gallery</h4>
+          </p>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <div class="column hiddenGems">
+      <div class="column art">
         <div class="content">
-          <img src="/w3images/people3.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Other</h4>
+          <img src="./images/Whitechapel.jpg" alt="Gallery" style="width:100%" class="northImg">
+          <p>
+            <h4>Whitechapel Gallery</h4>
+          </p>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
-      <!-- HIDDEN GEMS END -->
+      <!-- Art END -->
       <!-- END GRID -->
     </div>
   </div>
