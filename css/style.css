@@ -156,10 +156,10 @@ body {
     height: 3rem!important;
 }
 
-.column {
+/* .column {
     float: right;
     width: 25%;
-  }
+  } */
   
   /* Clear floats after the columns */
   .row:after {
@@ -188,7 +188,7 @@ body {
     width: 100%;
     text-align: center;
     color: white;
-    background: #da1560;
+    background: #3fb0ac;
     border-radius: 60px;
     padding: 10px;
 }
