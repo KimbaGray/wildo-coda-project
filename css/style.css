@@ -131,7 +131,7 @@ body {
     cursor: pointer;
   }
   
-  /* Add a grey background colour on hover*/
+  /* Add background colour on hover*/
   .btn:hover {
     background-color: #ddd;
   }
@@ -145,29 +145,28 @@ body {
   h4 {
     display: flex;
     justify-content: center;
-  }
+}
 
   .northImg {
       border-radius: 8px;
-  }
+}
 
 .currentWeather .w-icon {
     width: 3rem!important;
     height: 3rem!important;
 }
 
-.column {
+/* .column {
     float: right;
     width: 25%;
-  }
+  } */
   
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
+}
 
   .contact { 
     float: left;
@@ -188,7 +187,7 @@ body {
     width: 100%;
     text-align: center;
     color: white;
-    background: #da1560;
+    background: #3fb0ac;
     border-radius: 60px;
     padding: 10px;
 }

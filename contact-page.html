@@ -19,6 +19,7 @@
 
 
 <body>
+  <!-- Navbar starts -->
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="./index.html">Wildo Coda</a>
@@ -29,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">North</a>
+            <a class="nav-link" href="./north.html">North</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">South</a>
+            <a class="nav-link" href="#" id="south">South</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">East</a>
@@ -41,76 +42,102 @@
             <a class="nav-link" href="#">West</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Get in touch</a>
+            <a class="nav-link" href="./contact-page.html">Get in touch</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-btn">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
-            </button>
-          </div>
-        </form>
+        <div class="searchBar">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
+          </button>
+        </div>
       </div>
     </nav>
   </div>
+  <!-- Navbar ends -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline">
+            <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
+              aria-label="Search">
+            <div class="searchButton">
+              <button type="button" class="btn ml-5" id="searchButton">Search</button>
+              <p id="text"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal ends -->
+
+  <!-- Weather API starts -->
   <section class="container">
     <div class="row">
       <div class="col-md-8">
-
       </div>
       <div class="col-md-4">
         <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON"
           data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
           data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
           data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
-        
+        <script>
+          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
       </div>
-
     </div>
   </section>
-    <section class="container">
-      <div class="row">
-        <div class="col-md-6 vert-align-center">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6 vert-align-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.</p>
-        </div>
-        <div class="col-md-6">
-            <form class="form-container">
-            
-              <div class="form-group">
-                <h2> Contact Us </h2>
-                <br>
-                <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Email Address" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
-                  else.</small>
-              </div>
-              <div class="form-group">
-                <input type="subject" class="form-control" id="exampleInputSubject" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleInputMessage">Your Message</label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Sign me up to Wildo's newsletter</label>
-              </div>
-              <br>
-              <!-- <button> type="submit" class="btn-primary">Send Message</button> -->
-              <button class="contact-button">Send Message</button>
-            </form>
-        </div>
-      </div>    
+      </div>
+      <div class="col-md-6">
+        <form class="form-container">
+
+          <div class="form-group">
+            <h2> Contact Us </h2>
+            <br>
+            <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Email Address" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
+              else.</small>
+          </div>
+          <div class="form-group">
+            <input type="subject" class="form-control" id="exampleInputSubject" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <!-- <label for="exampleInputMessage">Your Message</label> -->
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Your Message"></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign me up to Wildo's newsletter</label>
+          </div>
+          <br>
+          <!-- <button> type="submit" class="btn-primary">Send Message</button> -->
+          <button class="contact-button">Send Message</button>
+        </form>
+      </div>
+    </div>
   </section>
 
 
@@ -146,8 +173,8 @@
   <script src="js/script.js"></script>
 
   <script>
-      !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-    </script>
+    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+  </script>
 </body>
 
 </html>
