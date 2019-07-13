@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Josefin+Sans|Reem+Kufi&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Wildo Coda - home page</title>
+</head>
+
+
+<body>
+  <!-- Navbar starts -->
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="./index.html">Wildo Coda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./north.html">North</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./east.html">East</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./south.html">South</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./west.html">West</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./contact-page.html">Get in touch</a>
+            </li>
+          </ul>
+          <div class="searchBar">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar ends -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form class="form-inline">
+            <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
+              aria-label="Search">
+            <div class="searchButton">
+              <button type="button" class="btn ml-5" id="searchButton">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal ends -->
+
+  <!-- Weather API starts -->
+  <section class="container">
+      <div class="row">
+          <div class="col-md-8">
+          </div>
+          <div class="col-md-12">
+              <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear" data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)" data-cloudcolor="rgba(101, 101, 101, 0.37)" >LONDON WEATHER</a>
+              <script>
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+              </script>
+          </div>
+      </div>
+  </section>
+  <!-- Weather API ends -->
+
+  <br>
+  <!-- Filterable portfolio starts -->
+  <div class="container d-flex justify-content-center">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('parks')"> Parks</button>
+      <button class="btn" onclick="filterSelection('pubs')"> Pubs</button>
+      <button class="btn" onclick="filterSelection('restaurants')"> Restaurants</button>
+      <button class="btn" onclick="filterSelection('hiddenGems')"> Hidden gems</button>
+    </div>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="container">
+    <div class="row">
+      <!-- PARKS BEGINS -->
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/Golders.png" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Golders Hill Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/Hampstead1.jpeg" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Hampstead Heath</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/Highbury.jpeg" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Highbury Fields</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/Primrose.jpeg" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Primrose Hill</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/RegentsPark.jpeg" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Regent's Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column parks">
+        <div class="content">
+          <img src="./images/Waterlow.jpeg" alt="Park" style="width:100%" class="northImg">
+          <p>
+            <h4>Waterlow Park</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- PARKS END -->
+
+      <!-- PUBS BEGINS -->
+      <div class="column pubs">
+        <div class="content">
+          <img src="./images/Old Bull.jpeg" alt="Pub" style="width:100%" class="northImg">
+          <p>
+            <h4>The Old Bull & Bush</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column pubs">
+        <div class="content">
+          <img src="./images/Flask.jpeg" alt="Pub" style="width:100%" class="northImg">
+          <p>
+            <h4>The Flask</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column pubs">
+        <div class="content">
+          <img src="./images/Faltering.jpeg" alt="Pub" style="width:100%" class="northImg">
+          <p>
+            <h4>The Faltering Fullback</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- PUBS END -->
+
+      <!-- REATAURANTS BEGINS -->
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/Sardine.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Sardine</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/BQ.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Berber & Q Shawarma Bar</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/Ceremony.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Ceremony</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/Rubedo.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Rubedo</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/Mercury.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Le Mercury</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column restaurants">
+        <div class="content">
+          <img src="./images/Trullo.jpg" alt="Restaurant" style="width:100%" class="northImg">
+          <p>
+            <h4>Trullo</h4>
+          </p>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- RESTAURANTS END -->
+
+      <!-- HIDDEN GEMS BEGINS -->
+      <div class="column hiddenGems">
+        <div class="content">
+          <img src="/w3images/people1.jpg" alt="Hidden Gem" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column hiddenGems">
+        <div class="content">
+          <img src="/w3images/people2.jpg" alt="Hidden Gem" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column hiddenGems">
+        <div class="content">
+          <img src="/w3images/people3.jpg" alt="Hidden Gem" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <!-- HIDDEN GEMS END -->
+      <!-- END GRID -->
+    </div>
+  </div>
+  </div>
+  <!-- Filterable portfolio ends -->
+  <br>
+
+  <!-- Footers starts -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="d-flex justify-content-center col-md-12 py-3">
+        <a class="sm-ic" href="https://www.facebook.com/wildocoda/" target="_blank">
+          <i class="fa fa-facebook-f fa-lg black-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
+        <a class="sm-ic" href="https://www.twitter.com" target="_blank">
+          <i class="fa fa-twitter fa-lg black-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <a class="sm-ic" href="https://www.instagram.com/wildocoda/" target="_blank">
+          <i class="fa fa-instagram fa-lg black-text fa-2x"> </i>
+        </a>
+      </div>
+      <div class="d-flex justify-content-center col-md-12 py-3">
+        © 2019 Wildo Coda
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
