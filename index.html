@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Josefin+Sans|Reem+Kufi&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Wildo Coda - home page</title>
 </head>
@@ -56,17 +56,26 @@
   </div>
   <!-- Navbar ends -->
 
- <!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div class="modal-body">
           <form class="form-inline">
             <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
               aria-label="Search">
             <div class="searchButton">
               <button type="button" class="btn ml-5" id="searchButton">Search</button>
+              <div class="message">
+                <br>
+                <p id="text"></p>
+              </div>
             </div>
           </form>
         </div>
@@ -78,35 +87,30 @@
   <!-- Weather API starts -->
   <section class="container">
     <div class="row">
-        <div class="col-md-8">
-        </div>
-        <div class="col-md-12">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON" data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear" data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)" data-cloudcolor="rgba(101, 101, 101, 0.37)" >LONDON WEATHER</a>
-            <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
-        </div>
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON"
+          data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
+          data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
+          data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
+      </div>
     </div>
-</section>
-<!-- Weather API ends -->
-
-  <br>
-
+  </section>
+  <!-- Weather API ends -->
+  
   <!-- Sliding image gallery starts -->
   <section class="slidingImageGallery container">
     <!--puts carousel inside a container instead of having carousel take up the whole page-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <!--attribute is used to mark a carousel as animating starting at page load-->
       <div class="carousel-inner">
-        <div class="carousel-caption">
+        <div class="carousel-caption-top">
           <p id="typing" class="typing"></p>
         </div>
         <div class="carousel-item active">
-
-           <!--'active' needs to be added to one of the slides otherwise carousel will not be visible-->
-
+          <!--'active' needs to be added to one of the slides otherwise carousel will not be visible-->
           <img class="d-block w-100" src="./images/London9.jpeg" alt="Fourth slide">
-
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="./images/London10.jpeg" alt="Fourth slide">
@@ -180,9 +184,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-
-
+  <script src="./js/script.js"></script>
+  <script src="./js/typewriter.js"></script>
+  <script>
+    !function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+  </script>
 </body>
 
 </html>

@@ -40,16 +40,8 @@ body {
 }
 
 /* Image carousel */
-.carousel-caption {
-    color: white; 
+.carousel-caption-top {
     font-size: 20px;
-    line-height: 1.5;
-    padding-top: 0.8rem;
-    padding-bottom: 0.1rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
 }
 
 /* set mobile carousel container height to 300px for all images inside */
@@ -131,7 +123,7 @@ body {
     cursor: pointer;
   }
   
-  /* Add a grey background colour on hover*/
+  /* Add background colour on hover*/
   .btn:hover {
     background-color: #ddd;
   }
@@ -145,29 +137,23 @@ body {
   h4 {
     display: flex;
     justify-content: center;
-  }
+}
 
   .northImg {
       border-radius: 8px;
-  }
+}
 
 .currentWeather .w-icon {
     width: 3rem!important;
     height: 3rem!important;
 }
 
-/* .column {
-    float: right;
-    width: 25%;
-  } */
-  
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
+}
 
   .contact { 
     float: left;
@@ -178,6 +164,7 @@ body {
 .form-container{
     background-color: #f1f1f1;
     padding: 15px;
+    border-radius: 8px;
 }
 
   .contact-button {
@@ -195,4 +182,9 @@ body {
 
 .vert-align-center {
     align-self: center;
+}
+
+.message {
+    color: #3fb0ac;
+    padding-left: 50px;
 }

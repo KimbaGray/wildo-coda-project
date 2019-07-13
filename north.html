@@ -21,31 +21,31 @@
 <body>
   <!-- Navbar starts -->
   <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="./index.html">Wildo Coda</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./north.html">North</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./east.html">East</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./south.html">South</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./west.html">West</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./contact-page.html">Get in touch</a>
-            </li>
-          </ul>
-          <div class="searchBar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="./index.html">Wildo Coda</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./north.html">North</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">South</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">East</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">West</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact-page.html">Get in touch</a>
+          </li>
+        </ul>
+        <div class="searchBar">
           <!-- Button trigger modal -->
           <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-search" fa-lg black-text mr-md-5 mr-3 fa-2x></i>
@@ -61,12 +61,21 @@
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div class="modal-body">
           <form class="form-inline">
             <input class="form-control form-control-ml ml-5 w-75" id="mySearch" type="text" value="Search Wildo Coda"
               aria-label="Search">
             <div class="searchButton">
               <button type="button" class="btn ml-5" id="searchButton">Search</button>
+              <div class="message">
+                <br>
+                <p id="text"></p>
+              </div>
             </div>
           </form>
         </div>
@@ -85,15 +94,11 @@
           data-label_2="WEATHER" data-icons="Climacons" data-mode="Current" data-days="3" data-theme="clear"
           data-shadow="rgba(146, 18, 18, 0.05)" data-suncolor="rgba(255, 225, 19, 0.98)"
           data-cloudcolor="rgba(101, 101, 101, 0.37)">LONDON WEATHER</a>
-        <script>
-          !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-        </script>
       </div>
     </div>
   </section>
   <!-- Weather API ends -->
 
-  <br>
   <!-- Filterable portfolio starts -->
   <div class="container d-flex justify-content-center">
     <div id="myBtnContainer">
@@ -256,21 +261,21 @@
       <div class="column hiddenGems">
         <div class="content">
           <img src="/w3images/people1.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Girl</h4>
+          <h4>Antiques</h4>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column hiddenGems">
         <div class="content">
           <img src="/w3images/people2.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Man</h4>
+          <h4>Other</h4>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column hiddenGems">
         <div class="content">
           <img src="/w3images/people3.jpg" alt="Hidden Gem" style="width:100%">
-          <h4>Woman</h4>
+          <h4>Other</h4>
           <p>Lorem ipsum dolor..</p>
         </div>
       </div>
@@ -313,6 +318,19 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  <script src="js/north.js"></script>
+  <script type="text/javascript"></script>
+  <script>
+    !function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+  </script>
 </body>
 
 </html>
