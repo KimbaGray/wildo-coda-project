@@ -9,7 +9,6 @@
 // });
 
 var message = "We're working on this feature. Watch this space 🕵️‍♀️";
-
 var searchBtn = document.getElementById("searchButton");
 searchBtn.addEventListener("click", function() {
 console.log("Hello");
