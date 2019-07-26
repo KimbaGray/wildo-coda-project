@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Josefin+Sans|Reem+Kufi&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Wildo Coda - home page</title>
 </head>
@@ -29,16 +29,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item active-nav">
             <a class="nav-link" href="./north.html">North</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
+            <a class="nav-link" href="./east.html">East</a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="./south.html">South</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./east.html">East</a>
-          </li>
-          <li class="nav-item active-nav">
             <a class="nav-link" href="./west.html">West</a>
           </li>
           <li class="nav-item">
@@ -102,183 +102,212 @@
   <!-- Filterable portfolio starts -->
   <div class="container d-flex justify-content-center">
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn active" id="allBtn" onclick="filterSelection('all')"> Show all</button>
       <button class="btn" onclick="filterSelection('parks')"> Parks</button>
       <button class="btn" onclick="filterSelection('foodanddrink')"> Food and Drink</button>
       <button class="btn" onclick="filterSelection('art')"> Art</button>
     </div>
   </div>
 
-  <!-- Portfolio Gallery Grid -->
+   <!-- Portfolio Gallery Grid -->
   <div class="container">
     <div class="row">
       <!-- PARKS BEGINS -->
       <div class="column parks">
         <div class="content">
-          <img src="./images/Golders.png" alt="Park" style="width:100%" class="northImg">
-          <p>
-            <h4>Golders Hill Park</h4>
+        <!--pop up modal on image -->
+              <a href="./images/kyoto.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Kyoto Gardens" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+                <img src="./images/kyoto.jpg" alt="Park" style="width:100%" class="westImg">
+              </a>
+           
+                <p>
+            <h4>Kyoto Gardens</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
+          
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <img src="./images/Hampstead1.jpeg" alt="Park" style="width:100%" class="northImg">
+            <a href="./images/Regents.jpeg" data-toggle="lightbox" data-gallery="gallery" data-title="Regents Park" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/Regents.jpeg" alt="Park" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Hampstead Heath</h4>
-          </p>
-          <p>Lorem ipsum dolor..</p>
+            <h4>Regents Park</h4>
+            </p>
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <img src="./images/Highbury.jpeg" alt="Park" style="width:100%" class="northImg">
+            <a href="./images/Greenpark.jpeg" data-toggle="lightbox" data-gallery="gallery" data-title="Green Park" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/Greenpark.jpeg" alt="Park" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Highbury Fields</h4>
+            <h4>Green Park</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
+
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <img src="./images/Primrose.jpeg" alt="Park" style="width:100%" class="northImg">
+            <a href="./images/Kew.jpeg" data-toggle="lightbox" data-gallery="gallery" data-title="Kew Gardens" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/Kew.jpeg" alt="Park" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Primrose Hill</h4>
+            <h4>Kew Gardens</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <img src="./images/RegentsPark.jpeg" alt="Park" style="width:100%" class="northImg">
+            <a href="./images/Richmond.jpeg" data-toggle="lightbox" data-gallery="gallery" data-title="Richmond Park" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/Richmond.jpeg" alt="Park" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Regent's Park</h4>
+            <h4>Richmond Park</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <img src="./images/Waterlow.jpeg" alt="Park" style="width:100%" class="northImg">
+            <a href="./images/chiswick.webp" data-toggle="lightbox" data-gallery="gallery" data-title="Chiswick House" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/chiswick.webp" alt="Park" style="width:100%" class="southImg">
+          </a>
           <p>
-            <h4>Waterlow Park</h4>
+            <h4>Chiswick House and Gardens</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <!-- PARKS END -->
 
-      <!-- Food and Drink BEGINS -->
+      <!-- Food and Drink< BEGINS -->
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Old Bull.jpeg" alt="Pub" style="width:100%" class="northImg">
+            <a href="./images/eveBar.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Eve Bar" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/eveBar.jpg" alt="Pub" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>The Old Bull & Bush</h4>
+  
+            <h4>Eve Bar</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Flask.jpeg" alt="Pub" style="width:100%" class="northImg">
+            <a href="./images/blamegloria.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Blame Gloria" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/blamegloria.jpg" alt="Pub" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>The Flask</h4>
+            <h4>Blame Gloria</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Faltering.jpeg" alt="Pub" style="width:100%" class="northImg">
+            <a href="./images/BasementSate.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Basement Sate" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/BasementSate.jpg" alt="Pub" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>The Faltering Fullback</h4>
+            <h4>Basement Sate</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Sardine.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/MrFoggs.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Mr MrFoggs" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/MrFoggs.jpg" alt="Restaurant" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Sardine</h4>
+            <h4>Mr Fogg’s Society of Exploration</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/BQ.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/opium.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Opium" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/opium.jpg" alt="Restaurant" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Berber & Q Shawarma Bar</h4>
+            <h4>Opium</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Ceremony.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/BoneDaddies.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Bone Daddies" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/BoneDaddies.jpg" alt="Restaurant" style="width:100%" class="westImg">
           <p>
-            <h4>Ceremony</h4>
+            <h4>Bone Daddies</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Rubedo.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/Aquanueva.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Aqua Nueva" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/Aquanueva.jpg" alt="Restaurant" style="width:100%" class="westImg">
+          </a>
           <p>
-            <h4>Rubedo</h4>
+            <h4>Aqua Nueva</h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Mercury.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Donnelly's" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/jpg" alt="Restaurant" style="width:100%" class="southImg">
           <p>
-            <h4>Le Mercury</h4>
+            <h4></h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <div class="column foodanddrink">
         <div class="content">
-          <img src="./images/Trullo.jpg" alt="Restaurant" style="width:100%" class="northImg">
+            <a href="./images/.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Kudu" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/.jpg" alt="Restaurant" style="width:100%" class="southImg">
           <p>
-            <h4>Trullo</h4>
+            <h4></h4>
           </p>
-          <p>Lorem ipsum dolor..</p>
         </div>
       </div>
       <!-- Food and Drink< END -->
 
       <!-- Art BEGINS -->
       <div class="column art">
-        <div class="content">
-          <img src="./images/Barbican.jpeg" alt="Gallery" style="width:100%" class="northImg">
-          <p>
-            <h4>Barbican Centre</h4>
-          </p>
-          <p>Lorem ipsum dolor..</p>
+        <div class="content">         
+            <a href="./images/.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Gasworks Gallery" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/.jpg" alt="Gallery" style="width:100%">
+          <h4></h4>
         </div>
       </div>
       <div class="column art">
         <div class="content">
-          <img src="./images/Chisenhale.jpg" alt="Gallery" style="width:100%" class="northImg">
-          <p>
-            <h4>Chisenhale Gallery</h4>
-          </p>
-          <p>Lorem ipsum dolor..</p>
+            <a href="./images/.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="South London Gallery" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/.jpg" alt="Gallery" style="width:100%">
+          <h4></h4>
         </div>
       </div>
       <div class="column art">
         <div class="content">
-          <img src="./images/Whitechapel.jpg" alt="Gallery" style="width:100%" class="northImg">
-          <p>
-            <h4>Whitechapel Gallery</h4>
-          </p>
-          <p>Lorem ipsum dolor..</p>
+            <a href="./images/.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="Knight Webb Gallery" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua...">
+          <img src="./images/.jpg" alt="Gallery" style="width:100%">
+          <h4></h4>
         </div>
       </div>
       <!-- Art END -->
@@ -319,6 +348,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+    
   <script src="js/script.js"></script>
   <script src="js/north.js"></script>
   <script type="text/javascript"></script>
@@ -332,6 +363,11 @@
         fjs.parentNode.insertBefore(js, fjs);
       }
     }(document, 'script', 'weatherwidget-io-js');
+
+    $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
   </script>
 </body>
 
