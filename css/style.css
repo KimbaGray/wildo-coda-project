@@ -3,6 +3,15 @@ body {
     
 }
 
+.lightboxImg {
+    color: #000000!important;
+}
+
+.lightboxImg:hover {
+    color: #3fb0ac!important;
+    text-decoration: underline;
+}
+
 /* Navigation  */
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,6 +35,16 @@ body {
 /* Search and modal */
 .searchButton {
     padding-top: 5px;
+}
+
+#searchButton {
+    background-color: #3fb0ac;
+    color: #ffffff;
+}
+
+#searchButton:hover {
+    background-color: #ddd;
+    color: #ffffff;
 }
 
 .modal-dialog {
@@ -153,7 +172,7 @@ body {
   
   /* Add a dark background colour to the active button */
   .btn.active {
-    background-color: #666;
+    background-color: #3fb0ac;
      color: white;
   }
 
@@ -162,7 +181,7 @@ body {
     justify-content: center;
 }
 
-  .northImg {
+  .filterImg {
       border-radius: 8px;
 }
 
@@ -201,6 +220,10 @@ body {
     background: #3fb0ac;
     border-radius: 60px;
     padding: 10px;
+}
+
+.contact-button:hover {
+    background-color: #ddd;
 }
 
 .vert-align-center {
