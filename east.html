@@ -116,72 +116,36 @@
       <div class="column parks">
         <div class="content">
           <!--pop up modal on image -->
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
+          <a href="./images/LondonFields.jpg" data-toggle="lightbox" data-gallery="gallery" data-title="London Fields"
             class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
+            <img src="./images/LondonFields.jpg" alt="Park" style="width:100%" class="filterImg">
             <p>
-              <h4>Golders Hill Park</h4>
+              <h4>London Fields</h4>
             </p>
           </a>
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
-            class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          <a href="./images/VictoriaPark2.jpg" data-toggle="lightbox" data-gallery="gallery"
+            data-title="Golders Hill Park" class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
+            <img src="./images/VictoriaPark2.jpg" alt="Park" style="width:100%" class="filterImg">
             <p>
-              <h4>Golders Hill Park</h4>
+              <h4>Victoria Park</h4>
             </p>
           </a>
         </div>
       </div>
       <div class="column parks">
         <div class="content">
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
+          <a href="./images/MarkSt.jpeg" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
             class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
+            <img src="./images/MarkSt.jpeg" alt="Park" style="width:100%" class="filterImg">
             <p>
-              <h4>Golders Hill Park</h4>
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="column parks">
-        <div class="content">
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
-            class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
-            <p>
-              <h4>Golders Hill Park</h4>
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="column parks">
-        <div class="content">
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
-            class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
-            <p>
-              <h4>Golders Hill Park</h4>
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="column parks">
-        <div class="content">
-          <a href="./images/Golders.png" data-toggle="lightbox" data-gallery="gallery" data-title="Golders Hill Park"
-            class="lightboxImg" data-footer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua...">
-            <img src="./images/Golders.png" alt="Park" style="width:100%" class="filterImg">
-            <p>
-              <h4>Golders Hill Park</h4>
+              <h4>Mark Street Gardens</h4>
             </p>
           </a>
         </div>
@@ -374,6 +338,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+
   <script src="js/script.js"></script>
   <script src="js/north.js"></script>
   <script type="text/javascript"></script>
@@ -387,6 +353,11 @@
         fjs.parentNode.insertBefore(js, fjs);
       }
     }(document, 'script', 'weatherwidget-io-js');
+
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
   </script>
 </body>
 
