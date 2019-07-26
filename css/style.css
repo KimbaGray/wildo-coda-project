@@ -34,6 +34,20 @@ body {
     padding: 0px;
   }
 
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+   }
+   input:focus:-moz-placeholder {
+    color: transparent;
+   }
+   
+   textarea:focus:-moz-placeholder {
+    color: transparent;
+   }
+   textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+   }
+
 /* Weather */
 .currentWeather h1 {
     font-size:0.5em!important;
