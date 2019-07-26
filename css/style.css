@@ -3,6 +3,7 @@ body {
     
 }
 
+
 .lightboxImg {
     color: #000000!important;
 }
@@ -12,7 +13,20 @@ body {
     text-decoration: none!important;
 }
 
+.typing {
+    text-align: center;
+}
+
 /* Navigation  */
+
+.nav {
+    height: 50px;
+}
+
+.fixed-top {
+    background-color: rgba(255,255,255, 0.8)!important;
+    
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: black;
@@ -167,7 +181,7 @@ body {
   
   /* Add background colour on hover*/
   .btn:hover {
-    background-color: #ddd;
+    background-color: #3fb0ac;
   }
   
   /* Add a dark background colour to the active button */
