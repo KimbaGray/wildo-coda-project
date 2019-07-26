@@ -9,7 +9,7 @@ body {
 
 .lightboxImg:hover {
     color: #3fb0ac!important;
-    text-decoration: underline;
+    text-decoration: none!important;
 }
 
 /* Navigation  */
