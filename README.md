@@ -1,3 +1,3 @@
-# Wildo Coda Project - in a team of two we built a blog for our "client" Wildo Coda. 
+A simple blog project, part of the Wild Code School full-stack course - using a weather forecast API.
 
-https://kimbagray.github.io/wildo-coda-project/
+You can find the live project here: https://kimbagray.github.io/wildo-coda-project/
